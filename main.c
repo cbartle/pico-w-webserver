@@ -19,7 +19,7 @@ int main() {
     }
     // Print a success message once connected
     printf("Connected! \n");
-    
+    cyw43_arch_gpio_put(CYW43_WL_GPIO_LED_PIN, 1);
     // Initialise web server
     httpd_init();
     printf("Http server initialised\n");
